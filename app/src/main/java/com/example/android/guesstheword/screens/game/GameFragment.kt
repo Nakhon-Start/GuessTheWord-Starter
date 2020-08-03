@@ -35,7 +35,7 @@ class GameFragment : Fragment() {
 
         // Get the viewModel
         viewModel = ViewModelProviders.of(this).get(GameViewModel::class.java)
-        
+
 
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer<Boolean> { hasFinished ->
             if (hasFinished) gameFinished()
